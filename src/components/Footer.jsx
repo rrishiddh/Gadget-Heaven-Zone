@@ -1,7 +1,7 @@
 
 const Footer = () => {
   return (
-    <div className="max-w-screen-2xl py-16">
+    <div className="max-w-screen-2xl mx-auto py-16">
       <div className="w-[60%] mx-auto  text-center">
         <footer className=" space-y-4   mx-auto">
           <h1 className="text-2xl lg:text-4xl font-bold">Gadget Heaven Zone</h1>

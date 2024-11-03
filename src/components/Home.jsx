@@ -1,9 +1,14 @@
-import React from 'react';
+import Banner from './Banner';
+import ExploreGadgets from './ExploreGadgets';
 
 const Home = () => {
     return (
         <div>
-            <h1>home</h1>
+            <Banner></Banner>
+            <div className='min-h-screen'>
+            <ExploreGadgets></ExploreGadgets>
+
+            </div>
         </div>
     );
 };
