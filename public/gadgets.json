@@ -1,6 +1,6 @@
 [
     {
-      "product_id": "P001",
+      "product_id": 1,
       "product_title": "Apple iPhone 15 Pro Max",
       "product_image": "https://i.ibb.co.com/ZKXXmch/1.jpg",
       "category": "phone",
@@ -17,7 +17,7 @@
       "rating": 4.8
     },
     {
-      "product_id": "P002",
+      "product_id": 2,
       "product_title": "Samsung Galaxy S23 Ultra",
       "product_image": "https://i.ibb.co.com/12fp81W/2.jpg",
       "category": "phone",
@@ -34,7 +34,7 @@
       "rating": 4.7
     },
     {
-      "product_id": "P003",
+      "product_id": 3,
       "product_title": "Sony WH-1000XM5",
       "product_image": "https://i.ibb.co.com/3y8n5hb/3.jpg",
       "category": "accessories",
@@ -51,7 +51,7 @@
       "rating": 4.9
     },
     {
-      "product_id": "P004",
+      "product_id": 4,
       "product_title": "Apple MacBook Pro 14-inch",
       "product_image": "https://i.ibb.co.com/c1cpTDJ/4.jpg",
       "category": "macbook",
@@ -68,7 +68,7 @@
       "rating": 4.8
     },
     {
-      "product_id": "P005",
+      "product_id": 5,
       "product_title": "Google Pixel 8",
       "product_image": "https://i.ibb.co.com/RyFdxNk/5.jpg",
       "category": "phone",
@@ -85,7 +85,7 @@
       "rating": 4.8
     },
     {
-      "product_id": "P006",
+      "product_id": 6,
       "product_title": "Fitbit Versa 4",
       "product_image": "https://i.ibb.co.com/f9kV7y6/6.jpg",
       "category": "smart_watch",
@@ -102,7 +102,7 @@
       "rating": 4.6
     },
     {
-      "product_id": "P007",
+      "product_id": 7,
       "product_title": "Apple Watch Series 9",
       "product_image": "https://i.ibb.co.com/6JG3BDs/7.jpg",
       "category": "smart_watch",
@@ -119,7 +119,7 @@
       "rating": 4.8
     },
     {
-      "product_id": "P008",
+      "product_id": 8,
       "product_title": "Logitech MX Master 3S",
       "product_image": "https://i.ibb.co.com/qBV9ss8/8.jpg",
       "category": "accessories",
@@ -136,7 +136,7 @@
       "rating": 4.7
     },
     {  
-      "product_id": "P009",
+      "product_id": 9,
       "product_title": "Xiaomi 13 Pro",
       "product_image": "https://i.ibb.co.com/Mp66xST/9.jpg",
       "category": "phone",
@@ -153,7 +153,7 @@
       "rating": 4.7
     },
     {
-      "product_id": "P010",
+      "product_id": 10,
       "product_title": "Apple AirPods Pro (2nd Generation)",
       "product_image": "https://i.ibb.co.com/7zDX7hK/10.jpg",
       "category": "accessories",
@@ -170,7 +170,7 @@
       "rating": 4.9
     },
     {
-      "product_id": "P011",
+      "product_id": 11,
       "product_title": "Google Pixel 7 Pro",
       "product_image": "https://i.ibb.co.com/HrvSCXX/11.jpg",
       "category": "phone",
@@ -187,7 +187,7 @@
       "rating": 4.6
     },
     {
-      "product_id": "P012",
+      "product_id": 12,
       "product_title": "Apple MacBook Air M2",
       "product_image": "https://i.ibb.co.com/XYnTN5f/12.jpg",
       "category": "macbook",
@@ -204,7 +204,7 @@
       "rating": 4.8
     },
     {
-      "product_id": "P013",
+      "product_id": 13,
       "product_title": "Samsung Galaxy Watch 6",
       "product_image": "https://i.ibb.co.com/hLvWXSH/13.jpg",
       "category": "smart_watch",
@@ -221,7 +221,7 @@
       "rating": 4.5
     },
     {
-      "product_id": "P014",
+      "product_id": 14,
       "product_title": "OnePlus 11",
       "product_image": "https://i.ibb.co.com/P9dLJLD/14.jpg",
       "category": "phone",
@@ -238,7 +238,7 @@
       "rating": 4.6
     },
     {
-      "product_id": "P015",
+      "product_id": 15,
       "product_title": "Apple iPhone 14",
       "product_image": "https://i.ibb.co.com/hHMs91g/15.jpg",
       "category": "phone",

@@ -13,7 +13,7 @@ const GadgetCard = ({ product }) => {
         <h2 className="card-title">{product.product_title}</h2>
         <p>Price: {product.price}$ </p>
         <div className="card-actions w-full">
-          <Link>
+          <Link to={`/productDetails/${product.product_id}`}>
             <button className="btn btn-primary">View Details</button>
           </Link>
         </div>

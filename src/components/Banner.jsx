@@ -15,7 +15,7 @@ const Banner = () => {
           Shop Now
         </button>
       </div>
-      <div className="absolute  bottom-0 translate-y-[45%] left-[5%]   lg:left-[25%]">
+      <div className="absolute  w-[60%] bottom-0 translate-y-[45%]   left-[20%]">
         <div className=" mx-auto  max-w-[500px] rounded-2xl outline-white outline outline-offset-8 outline-2">
           <img
             className="rounded-2xl  h-[100%] w-[100%]  "
