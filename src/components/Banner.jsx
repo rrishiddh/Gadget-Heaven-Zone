@@ -2,7 +2,7 @@ import bannerImg from "./../assets/banner.jpg";
 
 const Banner = () => {
   return (
-    <div className="max-w-screen-2xl mx-auto relative">
+    <div className=" relative">
       <div className=" lg:w-[94%] w-[85%] mx-auto text-center space-y-6 bg-[#9538E2] rounded-xl pt-6 text-white pb-44 lg:pb-60 mb-48 md:mb-64 lg:mb-96 ">
         <h1 className="text-3xl md:text-5xl font-bold lg:w-[80%] mx-auto">
           Upgrade Your Tech Accessorize with Gadget Heaven Zone
@@ -15,7 +15,7 @@ const Banner = () => {
           Shop Now
         </button>
       </div>
-      <div className="absolute mx-auto top-[75%] left-[15%] md:top-[65%] md:left-[20%] ">
+      <div className="absolute bottom-0 translate-y-32 md:translate-y-56 lg:translate-y-80  left-1/4 ">
         <div className=" mx-auto rounded-2xl outline-white outline outline-offset-8 outline-2">
           <img
             className="rounded-2xl h-[220px] md:h-[350px]  lg:h-[500px] object-cover mx-auto "

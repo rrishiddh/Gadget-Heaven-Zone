@@ -1,13 +1,9 @@
-
 const ExploreGadgets = () => {
-    return (
-        <div className="max-w-screen-2xl mx-auto">
-            <div className="w-[94%] mx-auto">
-            <h1>Explore Cutting-Edge Gadgets</h1>
-
-            </div>
-        </div>
-    );
+  return (
+    <div className="text-center my-10 ">
+      <h1 className="font-bold text-3xl">Explore Cutting-Edge Gadgets</h1>
+    </div>
+  );
 };
 
 export default ExploreGadgets;

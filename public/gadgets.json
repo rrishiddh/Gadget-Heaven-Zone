@@ -3,7 +3,7 @@
       "product_id": "P001",
       "product_title": "Apple iPhone 15 Pro Max",
       "product_image": "https://i.ibb.co.com/ZKXXmch/1.jpg",
-      "category": "iphone",
+      "category": "phone",
       "price": 1299,
       "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
       "specification": [
@@ -69,26 +69,26 @@
     },
     {
       "product_id": "P005",
-      "product_title": "Dell XPS 13 Plus",
-      "product_image": "https://i.ibb.co.com/VTXDMcR/5.jpg",
-      "category": "laptop",
-      "price": 1599,
-      "description": "A sleek and powerful ultrabook with premium design and cutting-edge technology.",
+      "product_title": "Google Pixel 8",
+      "product_image": "https://i.ibb.co.com/RyFdxNk/5.jpg",
+      "category": "phone",
+      "price": 899,
+      "description": "The Google Pixel 8 features an advanced AI-powered camera and seamless Android experience.",
       "specification": [
-        "13.4-inch OLED display",
-        "Intel Core i7-1360P",
-        "16GB RAM, 1TB SSD",
-        "Fingerprint reader",
-        "Windows 11 Pro"
+        "6.2-inch OLED display with 90Hz refresh rate",
+        "Google Tensor G3 chip",
+        "Dual-camera system (50MP Main, 12MP Ultrawide)",
+        "4350mAh battery",
+        "128GB/256GB storage options"
       ],
-      "availability": false,
-      "rating": 4.5
+      "availability": true,
+      "rating": 4.8
     },
     {
       "product_id": "P006",
       "product_title": "Fitbit Versa 4",
       "product_image": "https://i.ibb.co.com/f9kV7y6/6.jpg",
-      "category": "smart watch",
+      "category": "smart_watch",
       "price": 229,
       "description": "A smart watch with comprehensive health and fitness tracking features.",
       "specification": [
@@ -105,7 +105,7 @@
       "product_id": "P007",
       "product_title": "Apple Watch Series 9",
       "product_image": "https://i.ibb.co.com/6JG3BDs/7.jpg",
-      "category": "smart watch",
+      "category": "smart_watch",
       "price": 399,
       "description": "Apple Watch Series 9 with new health monitoring and safety features.",
       "specification": [
@@ -135,22 +135,22 @@
       "availability": true,
       "rating": 4.7
     },
-    {
+    {  
       "product_id": "P009",
-      "product_title": "Asus ROG Zephyrus G14",
-      "product_image": "https://i.ibb.co.com/FJTSBXb/9.jpg",
-      "category": "laptop",
-      "price": 1799,
-      "description": "Powerful gaming laptop with AMD Ryzen 9 and NVIDIA RTX 4060.",
+      "product_title": "Xiaomi 13 Pro",
+      "product_image": "https://i.ibb.co.com/Mp66xST/9.jpg",
+      "category": "phone",
+      "price": 999,
+      "description": "Xiaomi 13 Pro offers a stunning display and cutting-edge camera technology.",
       "specification": [
-        "14-inch QHD display with 165Hz refresh rate",
-        "AMD Ryzen 9 7940HS",
-        "16GB RAM, 1TB SSD",
-        "GeForce RTX 4060 GPU",
-        "Backlit keyboard"
+        "6.73-inch AMOLED display with 120Hz refresh rate",
+        "Snapdragon 8 Gen 2 processor",
+        "Triple-camera system (50MP Main, 50MP Telephoto, 50MP Ultrawide)",
+        "4820mAh battery with 120W fast charging",
+        "256GB storage"
       ],
       "availability": true,
-      "rating": 4.8
+      "rating": 4.7
     },
     {
       "product_id": "P010",
@@ -207,7 +207,7 @@
       "product_id": "P013",
       "product_title": "Samsung Galaxy Watch 6",
       "product_image": "https://i.ibb.co.com/hLvWXSH/13.jpg",
-      "category": "smart watch",
+      "category": "smart_watch",
       "price": 349,
       "description": "Smart watch with advanced health monitoring features.",
       "specification": [
@@ -222,26 +222,26 @@
     },
     {
       "product_id": "P014",
-      "product_title": "Lenovo ThinkPad X1 Carbon Gen 11",
-      "product_image": "https://i.ibb.co.com/5hRk1Vk/14.jpg",
-      "category": "laptop",
-      "price": 1899,
-      "description": "Lightweight, powerful laptop with Intel Core i7 and top-notch security features.",
+      "product_title": "OnePlus 11",
+      "product_image": "https://i.ibb.co.com/P9dLJLD/14.jpg",
+      "category": "phone",
+      "price": 799,
+      "description": "The OnePlus 11 brings flagship performance with its powerful hardware and sleek design.",
       "specification": [
-        "14-inch 2.8K display",
-        "Intel Core i7-1360P",
-        "16GB RAM, 512GB SSD",
-        "Fingerprint reader and IR camera",
-        "Windows 11 Pro"
+        "6.7-inch AMOLED display with 120Hz refresh rate",
+        "Snapdragon 8 Gen 2 processor",
+        "Triple-camera system (50MP Main, 48MP Ultrawide, 32MP Telephoto)",
+        "5000mAh battery with 100W fast charging",
+        "128GB/256GB storage options"
       ],
       "availability": true,
-      "rating": 4.7
+      "rating": 4.6
     },
     {
       "product_id": "P015",
       "product_title": "Apple iPhone 14",
       "product_image": "https://i.ibb.co.com/hHMs91g/15.jpg",
-      "category": "iphone",
+      "category": "phone",
       "price": 799,
       "description": "Apple's latest iPhone with improved camera and performance.",
       "specification": [
@@ -255,4 +255,5 @@
       "rating": 4.7
     }
   ]
+  
   
