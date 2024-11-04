@@ -9,8 +9,8 @@
     },
     {
         "id": 3,
-        "category": "macbook"
-    },
+        "category": "computers"
+    },    
     {
         "id": 4,
         "category": "smart_watch"
@@ -18,5 +18,13 @@
     {
         "id": 5,
         "category": "keyboard"
-    }
+    },
+    {
+        "id": 6,
+        "category": "macbook"
+    },
+    {
+        "id": 7,
+        "category": "power_banks"
+    }    
 ]

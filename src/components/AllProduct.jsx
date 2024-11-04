@@ -1,30 +1,37 @@
-import { Link, useLoaderData } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
+import GadgetCard from "./GadgetCard";
+import { useEffect, useState } from "react";
 
 const AllProduct = () => {
   const gadgetsData = useLoaderData();
-  
+  const { category } = useParams();
+  // console.log(category)
+
+  const [gadgetCategory, setGadgetCategory] = useState([]);
+
+  useEffect(() => {
+    if (category) {
+      const selectedCategory = [...gadgetsData].filter(
+        (gadget) => gadget.category === category
+      );
+      setGadgetCategory(selectedCategory);
+    } else {
+      setGadgetCategory(gadgetsData);
+    }
+  }, [category, gadgetsData]);
 
   return (
-    <div className=" grid grid-cols-3 gap-6 mb-10">
-      {
-        gadgetsData.map(product =>(<div key={product.product_id} className="card card-compact bg-base-100  shadow-md">
-            <figure>
-              <img className="h-[200px] w-full object-cover"
-                src={product.product_image}
-                alt=  {product.product_title}        />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">{product.product_title}</h2>
-              <p>Price: {product.price}$ </p>
-              <div className="card-actions w-full">
-                <Link >
-                <button className="btn btn-primary">View Details</button>
-                </Link>
-              </div>
-            </div>
-          </div>) )
-      }
-    </div>
+    <div className="mb-10">
+    {gadgetCategory.length > 0 ? (
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {gadgetCategory.map((product) => (
+          <GadgetCard product={product} key={product.product_id}></GadgetCard>
+        ))}
+      </div>
+    ) : (
+      <p className="text-center items-center align-middle justify-center font-thin">No products available for this category.</p>
+    )}
+  </div>
   );
 };
 
