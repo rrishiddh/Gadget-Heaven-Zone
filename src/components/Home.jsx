@@ -7,13 +7,13 @@ const Home = () => {
   const phnCategory = useLoaderData();
 
   return (
-    <div className="max-w-screen-2xl w-[90%] mx-auto ">
+    <div className="max-w-screen-2xl  mx-auto ">
       <Banner></Banner>
 
       <div className="min-h-screen">
         <ExploreGadgets></ExploreGadgets>
         
-        <div className="grid lg:grid-cols-6 gap-6">
+        <div className="w-[90%] mx-auto grid lg:grid-cols-6 gap-6">
           <div>
             <Categories phnCategory={phnCategory}></Categories>
           </div>

@@ -1,6 +1,15 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { previousCartData } from ".";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
+  const [cartCount, setCartCount] = useState(0);
+  
+  useEffect(() => {
+    const cartData = previousCartData();
+    setCartCount(cartData.length);
+  }, []);
+
     const navLink = (
         < >
           <li>
@@ -16,8 +25,8 @@ const Navbar = () => {
     );
 
   return (
-    <div className="max-w-screen-2xl mx-auto">
-      <div className="navbar bg-base-100 w-[94%] mx-auto">
+    <div className="max-w-screen-2xl bg-base-100 mx-auto">
+      <div className="navbar w-[90%] mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -45,7 +54,7 @@ const Navbar = () => {
             }        
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">Gadget Heaven Zone</a>
+          <a className="btn btn-ghost text-xl gap-2"> <img className="w-5 h-5" src="https://img.icons8.com/?size=100&id=54502&format=png&color=000000" alt="" /> Gadget Heaven Zone</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 space-x-4">
@@ -54,10 +63,19 @@ const Navbar = () => {
             }           
           </ul>
         </div>
-        <div className="navbar-end gap-4">
-          <a className=" rounded-full bg-black/30 p-2"><img className="w-5 rounded-full h-5" src="https://img.icons8.com/?size=100&id=85080&format=png&color=000000" alt="" /></a>
-          <a className="rounded-full bg-black/30 p-2"><img className="w-5 rounded-full h-5" src="https://img.icons8.com/?size=100&id=85038&format=png&color=000000" alt="" /></a>
+        <div className="navbar-end flex gap-4">
+          <div className="relative">
+            <NavLink to="/dashboard" className="btn rounded-full ">
+              <img
+                src="https://img.icons8.com/?size=100&id=85080&format=png&color=000000"
+                alt="Cart"
+                className="w-5 rounded-full  h-5"
+              /> <span className="absolute  left-10 bottom-0 -top-1 rounded-full text-xl   font-bold">{cartCount} </span>            
+            </NavLink>       
+          </div>
+          <Link className="rounded-full btn " to='/dashboard'><img className="w-5  h-5 rounded-full" src="https://img.icons8.com/?size=100&id=85038&format=png&color=000000" alt="" /></Link>
         </div>
+       
       </div>
     </div>
   );

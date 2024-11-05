@@ -64,13 +64,13 @@ const ProductDetails = () => {
         </p>
       </div>
 
-      <div className="absolute top-48 left-[5%]  w-[80%] ">
+      <div className="absolute top-48 left-[5%]  w-[90%] ">
         <div className="bg-white rounded-xl py-10">
           <div className="flex flex-col lg:grid  lg:grid-cols-4 max-sm:text-center ">
             <div className="p-4 lg:col-span-2">
               <img
                 src={product_image}
-                className="max-w-sm rounded-lg shadow-2xl mx-auto w-[100%] h-[50%] lg:h-[100%] object-fit"
+                className="max-w-sm rounded-lg shadow-2xl mx-auto w-[100%] h-[50%] lg:h-[100%] object-cover"
               />
             </div>
             <div className="lg:col-span-2 space-y-2">
@@ -138,7 +138,7 @@ const ProductDetails = () => {
                   onClick={() => handelCart(product)}
                   className="btn  text-white btn-primary"
                 >
-                  Add To Cart{" "}
+                  Add To Cart
                   <img
                     className="w-6 h-6 text-white"
                     src="https://img.icons8.com/?size=100&id=85080&format=png&color=000000"

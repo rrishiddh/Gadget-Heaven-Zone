@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Categories = ({ phnCategory }) => {
   return (
-    <div className="grid lg:col-span-1 gap-4 bg-white p-5 rounded-lg border-2 lg:mb-10">
+    <div className="grid lg:col-span-1 gap-4 bg-white px-2 py-4 rounded-lg border-2 lg:mb-10">
       <Link
         className="bg-gray-100 btn btn-outline btn-primary rounded-full btn-md"
         to={`/`}

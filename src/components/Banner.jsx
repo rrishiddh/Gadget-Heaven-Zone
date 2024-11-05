@@ -2,8 +2,9 @@ import bannerImg from "./../assets/banner.jpg";
 
 const Banner = () => {
   return (
-    <div className=" relative">
-      <div className=" lg:w-[94%] w-[85%] mx-auto text-center space-y-6 bg-[#9538E2] rounded-xl pt-6 text-white pb-44 lg:pb-60 mb-48 md:mb-64 lg:mb-60 ">
+    <div className="bg-[#9538E2]">
+      <div className=" relative">
+      <div className=" w-[90%] mx-auto text-center space-y-6  rounded-xl pt-6 text-white pb-44 lg:pb-60 mb-48 md:mb-64 lg:mb-60 ">
         <h1 className="text-3xl md:text-5xl font-bold lg:w-[80%] mx-auto">
           Upgrade Your Tech Accessorize with Gadget Heaven Zone
         </h1>
@@ -24,6 +25,7 @@ const Banner = () => {
           />
         </div>
       </div>
+    </div>
     </div>
   );
 };
