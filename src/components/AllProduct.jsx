@@ -29,7 +29,7 @@ const AllProduct = () => {
         ))}
       </div>
     ) : (
-      <p className="text-center items-center align-middle justify-center font-thin">No products available for this category.</p>
+      <p className="text-center lg:py-56 items-center align-middle justify-center text-3xl font-thin">No products available for this category.</p>
     )}
   </div>
   );

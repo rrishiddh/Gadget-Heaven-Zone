@@ -10,7 +10,6 @@ const ProductDetails = () => {
     product_id,
     product_title,
     product_image,
-    category,
     price,
     description,
     specification,
