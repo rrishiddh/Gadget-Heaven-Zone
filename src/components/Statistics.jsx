@@ -47,8 +47,8 @@ const Statistics = () => {
         <CartesianGrid stroke="#f5f5f5" />
         <XAxis
           dataKey="product_title"
-          label={{ value: "Brand Name", position: "insideBottomRight", offset: -15 }}
-          scale="band"
+          label={{ value: "Brand Name",  position: "insideBottomRight", offset: -15 }}
+          scale="band" 
         />
         <YAxis label={{ value: "Price", angle: -90, position: "insideLeft" }} />
         <Tooltip />

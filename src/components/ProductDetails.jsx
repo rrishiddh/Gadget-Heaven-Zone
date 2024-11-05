@@ -1,11 +1,21 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { addToCart, addToWishlist } from ".";
+import { useEffect, useState } from "react";
 
 const ProductDetails = () => {
+  const data = useLoaderData();
+
   const { productDetails } = useParams();
   const productId = parseInt(productDetails);
 
-  const data = useLoaderData();
+  const [gadget, setGadget] = useState([]);
+
+  const [wishlist, setWishlist] = useState(false);
+
+ 
+
   const product = data.find((product) => product.product_id === productId);
+
   const {
     product_id,
     product_title,
@@ -15,7 +25,32 @@ const ProductDetails = () => {
     specification,
     availability,
     rating,
-  } = product;
+  } = product || {};
+
+  
+
+   useEffect(() => {
+  
+    const singleGadget = data.find((gadget) => gadget.product_id == productId);
+    setGadget(singleGadget || {});
+
+    const getWishlist = JSON.parse(localStorage.getItem("wishlistAdded")) || [];
+    const isExist = getWishlist.find(
+      (item) => item.product_id == singleGadget.product_id
+    );
+    if (isExist) {
+      setWishlist(true);
+    }
+  }, [data, productId, product_id]);
+
+  const handelCart = (product) => {
+    addToCart(product);
+  };
+
+  const handelWishlist = (product) => {
+    addToWishlist(product);
+    setWishlist(true);
+  };
 
   return (
     <div className="relative max-w-screen-2xl w-[90%] mx-auto ">
@@ -29,17 +64,19 @@ const ProductDetails = () => {
         </p>
       </div>
 
-      <div className="absolute  top-48 left-[5%]  w-[80%] ">
+      <div className="absolute top-48 left-[5%]  w-[80%] ">
         <div className="bg-white rounded-xl py-10">
           <div className="flex flex-col lg:grid  lg:grid-cols-4 max-sm:text-center ">
             <div className="p-4 lg:col-span-2">
               <img
                 src={product_image}
                 className="max-w-sm rounded-lg shadow-2xl mx-auto w-[100%] h-[50%] lg:h-[100%] object-fit"
-            />
+              />
             </div>
             <div className="lg:col-span-2 space-y-2">
-              <h1 className="text-2xl lg:text-3xl font-bold">{product_title}</h1>
+              <h1 className="text-2xl lg:text-3xl font-bold">
+                {product_title}
+              </h1>
               <p className="font-bold"> Price: $ {price}</p>
 
               <button className="btn btn-xs bg-green-200 text-green-500">
@@ -95,13 +132,29 @@ const ProductDetails = () => {
                   />
                 </div>
                 <button className="btn btn-xs bg-gray-200">{rating}</button>
-
               </div>
               <div className="flex gap-4 justify-center">
-                <button className="btn  text-white btn-primary">Add To Cart <img className="w-6 h-6 text-white" src="https://img.icons8.com/?size=100&id=85080&format=png&color=000000" /></button>
-                <button className=" rounded-full  border-2 border-gray hover:bg-gray-300"><img className="w-6 h-6 m-3" src="https://img.icons8.com/?size=100&id=85038&format=png&color=000000" /></button>
+                <button
+                  onClick={() => handelCart(product)}
+                  className="btn  text-white btn-primary"
+                >
+                  Add To Cart{" "}
+                  <img
+                    className="w-6 h-6 text-white"
+                    src="https://img.icons8.com/?size=100&id=85080&format=png&color=000000"
+                  />
+                </button>
+                <button
+                  disabled={wishlist}
+                  onClick={() => handelWishlist(product)}
+                  className="btn rounded-full p-0 "
+                >
+                  <img
+                    className="w-6 h-6 m-3"
+                    src="https://img.icons8.com/?size=100&id=85038&format=png&color=000000"
+                  />
+                </button>
               </div>
-
             </div>
           </div>
         </div>
