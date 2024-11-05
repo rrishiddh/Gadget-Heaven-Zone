@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Link } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 const GadgetCard = ({ product }) => {
   
 
@@ -17,9 +17,9 @@ const GadgetCard = ({ product }) => {
         <p>Price: {product.price}$ </p>
         <div className="card-actions w-full">
           
-          <Link to={`/productDetails/${product.product_id}`}>
+          <NavLink to={`/productDetails/${product.product_id}`}>
             <button className="btn btn-primary">View Details</button>
-          </Link>
+          </NavLink>
         </div>
       </div>
     </div>

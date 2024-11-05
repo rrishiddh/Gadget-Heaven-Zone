@@ -45,6 +45,7 @@ const ProductDetails = () => {
 
   const handelCart = (product) => {
     addToCart(product);
+    
   };
 
   const handelWishlist = (product) => {
@@ -93,15 +94,15 @@ const ProductDetails = () => {
                 ))}
               </ol>
 
-              <p className="flex gap-1 font-bold justify-center pt-2">
-                Rating{" "}
+              <p className="flex gap-1 font-bold max-sm:justify-center pt-2">
+                Rating
                 <img
                   className="w-6 h-6 "
                   src="https://img.icons8.com/?size=100&id=8ggStxqyboK5&format=png&color=000000"
                   alt=""
                 />
               </p>
-              <div className="flex  gap-3 justify-center pb-2">
+              <div className="flex  gap-3 max-sm:justify-center pb-2">
                 <div className="rating">
                   <input
                     type="radio"
@@ -133,7 +134,7 @@ const ProductDetails = () => {
                 </div>
                 <button className="btn btn-xs bg-gray-200">{rating}</button>
               </div>
-              <div className="flex gap-4 justify-center">
+              <div className="flex gap-4 max-sm:justify-center">
                 <button
                   onClick={() => handelCart(product)}
                   className="btn  text-white btn-primary"

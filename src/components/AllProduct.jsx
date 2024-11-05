@@ -10,8 +10,9 @@ const AllProduct = () => {
   const [gadgetCategory, setGadgetCategory] = useState([]);
 
   useEffect(() => {
+    
     if (category) {
-      const selectedCategory = [...gadgetsData].filter(
+      const selectedCategory = gadgetsData.filter(
         (gadget) => gadget.category === category
       );
       setGadgetCategory(selectedCategory);
