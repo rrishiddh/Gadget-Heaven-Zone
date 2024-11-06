@@ -73,7 +73,7 @@ addToCart(product);
       </div>
 
       <div className="absolute top-48 left-[5%]  w-[90%] ">
-        <div className="bg-white rounded-xl py-10">
+        <div className="bg-white  border border-gray rounded-xl py-10">
           <div className="flex flex-col lg:grid  lg:grid-cols-4 max-sm:text-center ">
             <div className="p-4 lg:col-span-2">
               <img
