@@ -34,7 +34,7 @@
 ### 1. Netlify : [Gadget Heaven Zone](https://gadget-heaven-zone-rrishiddh.netlify.app/)
 ### 2. Surge : [Gadget Heaven Zone](https://gadget-heaven-zone-rrishiddh.surge.sh/)
 
-### Assignment instruction Link:[ProgrammingHero_B10A8](https://github.com/ProgrammingHero1/B10-A8-gadget-heaven)
+### Assignment instruction Link:[ProgrammingHero_B10A8](https://github.com/ProgrammingHero1/B10-A8-gadget-heaven/blob/main/Batch-10_Assignment-08.pdf)
 
 
 

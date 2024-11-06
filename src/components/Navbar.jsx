@@ -28,7 +28,7 @@ const Navbar = () => {
     );
 
   return (
-    <div className={`max-w-screen-2xl mx-auto ${isHomePage ? 'bg-[#9538E2] ' : 'bg-base-100 '}`}>
+    <div className={`max-w-screen-2xl mx-auto ${isHomePage ? 'bg-[#9538E2] text-white ' : 'bg-base-100 '}`}>
       <div className="navbar w-[90%] mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
@@ -57,7 +57,7 @@ const Navbar = () => {
             }        
             </ul>
           </div>
-          <Link to='/'><a className="btn btn-ghost text-xl gap-2"> <img className="w-5 h-5" src="https://img.icons8.com/?size=100&id=54502&format=png&color=000000" alt="" /> Gadget Heaven Zone</a></Link>
+          <Link to='/'><a className="btn btn-ghost md:text-xl gap-2"> <img className="w-5 max-sm:hidden h-5" src="https://img.icons8.com/?size=100&id=54502&format=png&color=000000" alt="" /> Gadget Heaven Zone</a></Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 space-x-4">
@@ -66,14 +66,14 @@ const Navbar = () => {
             }           
           </ul>
         </div>
-        <div className="navbar-end flex gap-4">
+        <div className="navbar-end flex gap-5">
           <div className="relative">
             <NavLink to="/dashboard" className="btn rounded-full ">
               <img
                 src="https://img.icons8.com/?size=100&id=85080&format=png&color=000000"
                 alt="Cart"
                 className="w-5 rounded-full  h-5"
-              /> <span className="absolute  left-10 bottom-0 -top-1 rounded-full text-xl   font-bold">{cartLength.length} </span>            
+              /> <div className="absolute left-8 bottom-0 -top-2  rounded-full text-xl btn btn-sm bg-cyan-100 font-bold">{cartLength.length} </div>            
             </NavLink>       
           </div>
           <Link className="rounded-full btn " to='/dashboard'><img className="w-5  h-5 rounded-full" src="https://img.icons8.com/?size=100&id=85038&format=png&color=000000" alt="" /></Link>

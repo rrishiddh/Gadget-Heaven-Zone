@@ -58,7 +58,6 @@ const removeFromCart = (id)=>{
   const cartAdded3 = previousCartData();
   const remaining = cartAdded3.filter(gadget => gadget.product_id != id)
   localStorage.setItem("cartAdded", JSON.stringify(remaining));
-  toast.success("Successfully Removed From Cart!");
 
 }
 
