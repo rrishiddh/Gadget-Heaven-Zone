@@ -14,7 +14,7 @@ import {
 
 const Statistics = () => {
   const dataForChart = useLoaderData();
-
+  
   return (
     <>
       <div className="bg-[#9538E2] ">

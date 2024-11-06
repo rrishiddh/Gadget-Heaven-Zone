@@ -7,7 +7,7 @@ import { CartProduct } from "./Root";
 
 const ProductDetails = () => {
   const {cartLength, addToCart} = useContext(CartProduct);
-  console.log(cartLength)
+  // console.log(cartLength)
 
 
   const data = useLoaderData();

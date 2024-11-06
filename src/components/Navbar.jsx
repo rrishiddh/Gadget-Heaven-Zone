@@ -28,7 +28,7 @@ const Navbar = () => {
     );
 
   return (
-    <div className={`max-w-screen-2xl bg-base-100 mx-auto ${isHomePage ? 'bg-[#9538E2] text-white' : ''}`}>
+    <div className={`max-w-screen-2xl mx-auto ${isHomePage ? 'bg-[#9538E2] ' : 'bg-base-100 '}`}>
       <div className="navbar w-[90%] mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
