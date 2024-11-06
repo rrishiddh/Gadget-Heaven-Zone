@@ -2,6 +2,8 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { addToCart, addToWishlist, previousCartData } from ".";
 import { useContext, useEffect, useState } from "react";
 import { CartProduct } from "./Root";
+import { Helmet } from "react-helmet-async";
+
 
 
 
@@ -57,6 +59,9 @@ addToCart(product);
 
   return (
     <div className="relative max-w-screen-2xl w-[90%] mx-auto ">
+      <Helmet>
+        <title>{product ? product.product_title : "Product Details"}</title>
+      </Helmet>
       <div className=" mx-auto text-center space-y-6 bg-[#9538E2] rounded-xl pt-6 text-white pb-32 lg:pb-60 mb-96 max-sm:h-screen">
         <h1 className="text-3xl  font-bold lg:w-[80%] mx-auto">
           Product Details

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+
 const ErrorPage = () => {
     return (
         <div className="text-center justify-center w-[90%] mx-auto pt-44">

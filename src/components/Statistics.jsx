@@ -1,4 +1,5 @@
 import { useLoaderData } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import {
     ComposedChart,
     Line,
@@ -17,6 +18,9 @@ const Statistics = () => {
   
   return (
     <>
+     <Helmet>
+        <title> Statistics Page</title>
+      </Helmet>
       <div className="bg-[#9538E2] ">
         <div className="max-w-screen-2xl w-[90%] mx-auto ">
           <div className=" lg:w-[94%]  mx-auto text-center space-y-6  rounded-xl pt-6 text-white pb-32   ">

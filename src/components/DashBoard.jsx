@@ -9,6 +9,7 @@ import {
 import "react-responsive-modal/styles.css";
 import { useNavigate } from "react-router-dom";
 import { CartProduct } from "./Root";
+import { Helmet } from "react-helmet-async";
 
 
 const DashBoard = () => {
@@ -84,6 +85,9 @@ const DashBoard = () => {
 
   return (
     <div>
+      <Helmet>
+        <title> Dashboard</title>
+      </Helmet>
       <div className="bg-[#9538E2] ">
         <div className="max-w-screen-2xl w-[90%] mx-auto ">
           <div className="  text-center space-y-6  rounded-xl pt-6 text-white pb-20">

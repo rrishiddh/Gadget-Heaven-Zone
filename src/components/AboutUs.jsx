@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
+
 
 const AboutUs = () => {
   return (
     <div>
+      <Helmet>
+        <title> About Us</title>
+      </Helmet>
       <div className=" bg-[#9538E2]">
         <div className="pt-6 max-w-screen-2xl w-[90%] mx-auto ">
           <div>

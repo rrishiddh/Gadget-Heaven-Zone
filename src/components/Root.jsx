@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import { Toaster } from 'react-hot-toast';
 import { createContext, useState } from "react";
 import { previousCartData, addToCart as addProductToLocalStorage, removeFromCart } from "./index"; 
+import { HelmetProvider } from "react-helmet-async";
 
 
 export const CartProduct = createContext([]);
@@ -24,12 +25,14 @@ const Root = () => {
 
     return (
         <div className="bg-[#F7F7F7]">
+          <HelmetProvider>
             <CartProduct.Provider value={{cartLength, addToCart, handleRemoveFromCart}}>
             <Navbar></Navbar>
             <Outlet ></Outlet>
             <Toaster />
             <Footer></Footer>
             </CartProduct.Provider>
+            </HelmetProvider>
         </div>
     );
 };
