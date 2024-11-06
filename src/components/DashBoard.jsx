@@ -206,13 +206,7 @@ const DashBoard = () => {
                     <div className="space-y-3">
                       <h2 className="text-2xl font-bold">{singleGadget.product_title}</h2>
                       <p  className="font-thin">{singleGadget.description}</p>
-                      <p  className="text-xl font-bold pb-2">Price: $ {singleGadget.price}</p>
-                      <button
-                      onClick={() => addToCart(singleGadget)}
-                      className="btn bg-green-500 text-white rounded-full px-4 py-2 mt-4"
-                    >
-                      Add to Cart
-                    </button>
+                      <p  className="text-xl font-bold pb-2">Price: $ {singleGadget.price}</p>                      
                     </div>
                     
                   </div>

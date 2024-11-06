@@ -1,11 +1,13 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation  } from "react-router-dom";
 import { useContext } from "react";
 import { CartProduct } from "./Root";
 
 
 const Navbar = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+
   const { cartLength } = useContext(CartProduct);
-    // console.log(cartLength)
 
 
     const navLink = (
@@ -19,11 +21,14 @@ const Navbar = () => {
           <li>
             <NavLink to='/dashboard'>Dashboard</NavLink>
           </li>        
+          <li>
+            <NavLink to='/aboutus'>About Us</NavLink>
+          </li>        
         </>
     );
 
   return (
-    <div className="max-w-screen-2xl bg-base-100 mx-auto">
+    <div className={`max-w-screen-2xl bg-base-100 mx-auto ${isHomePage ? 'bg-[#9538E2] text-white' : ''}`}>
       <div className="navbar w-[90%] mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
@@ -52,7 +57,7 @@ const Navbar = () => {
             }        
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl gap-2"> <img className="w-5 h-5" src="https://img.icons8.com/?size=100&id=54502&format=png&color=000000" alt="" /> Gadget Heaven Zone</a>
+          <Link to='/'><a className="btn btn-ghost text-xl gap-2"> <img className="w-5 h-5" src="https://img.icons8.com/?size=100&id=54502&format=png&color=000000" alt="" /> Gadget Heaven Zone</a></Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 space-x-4">
