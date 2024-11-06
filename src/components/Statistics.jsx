@@ -24,9 +24,7 @@ const Statistics = () => {
               Statistics
             </h1>
             <p className="lg:w-[50%] w-[80%] mx-auto">
-              Explore the latest gadgets that will take your experience to the
-              next level. From smart device to the coolest accessories, we have
-              it all!
+            Immerse yourself in a world of cutting-edge gadgets and digital innovations. From the latest smartphones to the most advanced gaming consoles, we've got everything you need to stay connected, entertained, and inspired.
             </p>
           </div>
         </div>

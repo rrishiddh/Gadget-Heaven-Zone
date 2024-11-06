@@ -93,7 +93,7 @@ const DashBoard = () => {
             <p className="lg:w-[60%] w-[80%] mx-auto">
               Explore the latest gadgets that will take your experience to the
               next level. From smart device to the coolest accessories, we have
-              it all!
+              it all! Explore the latest gadgets and tech trends that will revolutionize your life. 
             </p>
             <div className=" space-x-2">
               <button
