@@ -24,7 +24,7 @@ const Root = () => {
       };
 
     return (
-        <div className="bg-[#F7F7F7]">
+        <div >
           <HelmetProvider>
             <CartProduct.Provider value={{cartLength, addToCart, handleRemoveFromCart}}>
             <Navbar></Navbar>

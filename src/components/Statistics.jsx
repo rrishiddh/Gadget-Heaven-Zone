@@ -17,7 +17,7 @@ const Statistics = () => {
   const dataForChart = useLoaderData();
   
   return (
-    <>
+    <div className="bg-[#F7F7F7]">
      <Helmet>
         <title> Statistics Page</title>
       </Helmet>
@@ -27,7 +27,7 @@ const Statistics = () => {
             <h1 className="text-3xl md:text-5xl font-bold lg:w-[80%] mx-auto">
               Statistics
             </h1>
-            <p className="lg:w-[50%] w-[80%] mx-auto">
+            <p className="lg:w-[60%] w-[80%] mx-auto">
             Immerse yourself in a world of cutting-edge gadgets and digital innovations. From the latest smartphones to the most advanced gaming consoles, we've got everything you need to stay connected, entertained, and inspired.
             </p>
           </div>
@@ -59,7 +59,7 @@ const Statistics = () => {
         <Line type="monotone" dataKey="rating" stroke="#ff7300" />
       </ComposedChart>
       </div>
-    </>
+    </div>
   );
 };
 

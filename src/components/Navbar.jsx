@@ -28,7 +28,7 @@ const Navbar = () => {
     );
 
   return (
-    <div className={`max-w-screen-2xl mx-auto ${isHomePage ? 'bg-[#9538E2] text-white ' : 'bg-base-100 '}`}>
+    <div className={`max-w-screen-2xl w-[90%] rounded-lg rounded-b-none mt-4 mx-auto ${isHomePage ? 'bg-[#9538E2] text-white ' : ''}`}>
       <div className="navbar w-[90%] mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
@@ -57,7 +57,7 @@ const Navbar = () => {
             }        
             </ul>
           </div>
-          <Link to='/'><a className="btn btn-ghost md:text-xl gap-2"> <img className="w-5 max-sm:hidden h-5" src="https://img.icons8.com/?size=100&id=54502&format=png&color=000000" alt="" /> Gadget Heaven Zone</a></Link>
+          <Link to='/'><a className="btn btn-ghost md:text-xl gap-2"> <img className="w-5 max-sm:hidden h-5" src="https://img.icons8.com/?size=100&id=54502&format=png&color=000000" alt="" /> GadgetHeaven Zone</a></Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 space-x-4">

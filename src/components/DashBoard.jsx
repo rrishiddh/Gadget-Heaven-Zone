@@ -77,7 +77,7 @@ const DashBoard = () => {
   };
 
   return (
-    <div>
+    <div className="bg-[#F7F7F7] pb-20">
       <Helmet>
         <title> Dashboard</title>
       </Helmet>
@@ -118,10 +118,10 @@ const DashBoard = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-screen-2xl w-[90%] mx-auto">
+      <div className="max-w-screen-2xl w-[90%]  mx-auto">
         {/* cart  */}
         {showSection === "cart" && (
-          <div className="max-w-screen-2xl w-[90%] mx-auto space-y-6 mb-20 mt-10">
+          <div className="max-w-screen-2xl w-[90%] mx-auto space-y-6  mt-10">
             <div className="space-y-6 ">
               <div className="flex justify-between max-sm:flex-col">
                 <h1 className="text-3xl font-bold max-sm:text-center max-sm:pb-2">
@@ -194,7 +194,7 @@ const DashBoard = () => {
         )}
         {/* wishlist  */}
         {showSection === "wishlist" && (
-          <div className="max-w-screen-2xl w-[90%] mx-auto space-y-6 mb-20 mt-10">
+          <div className="max-w-screen-2xl w-[90%] mx-auto space-y-6 mt-10">
             <div className="space-y-6 ">
               <h1 className="text-3xl max-sm:text-center font-bold">Wishlist</h1>
 
