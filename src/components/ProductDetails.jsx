@@ -1,18 +1,23 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { addToCart, addToWishlist } from ".";
-import { useEffect, useState } from "react";
+import { addToCart, addToWishlist, previousCartData } from ".";
+import { useContext, useEffect, useState } from "react";
+import { CartProduct } from "./Root";
+
+
 
 const ProductDetails = () => {
-  const data = useLoaderData();
+  const {cartLength, addToCart} = useContext(CartProduct);
+  console.log(cartLength)
 
+
+  const data = useLoaderData();
+  
   const { productDetails } = useParams();
   const productId = parseInt(productDetails);
 
-  const [gadget, setGadget] = useState([]);
+  const [gadget, setGadget] = useState();
 
   const [wishlist, setWishlist] = useState(false);
-
- 
 
   const product = data.find((product) => product.product_id === productId);
 
@@ -27,10 +32,7 @@ const ProductDetails = () => {
     rating,
   } = product || {};
 
-  
-
-   useEffect(() => {
-  
+  useEffect(() => {
     const singleGadget = data.find((gadget) => gadget.product_id == productId);
     setGadget(singleGadget || {});
 
@@ -44,14 +46,14 @@ const ProductDetails = () => {
   }, [data, productId, product_id]);
 
   const handelCart = (product) => {
-    addToCart(product);
-    
+addToCart(product);
   };
 
   const handelWishlist = (product) => {
     addToWishlist(product);
     setWishlist(true);
   };
+
 
   return (
     <div className="relative max-w-screen-2xl w-[90%] mx-auto ">

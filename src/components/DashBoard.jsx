@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import {
   previousCartData,
   removeFromCart,
@@ -8,22 +8,31 @@ import {
 } from ".";
 import "react-responsive-modal/styles.css";
 import { useNavigate } from "react-router-dom";
+import { CartProduct } from "./Root";
+
 
 const DashBoard = () => {
+  const { cartLength, addToCart, handleRemoveFromCart } = useContext(CartProduct);
+
   const [cartProduct, setCartProduct] = useState([]);
   const [showSection, setShowSection] = useState("cart");
-  // console.log(cartProduct)
+
   useEffect(() => {
     const addedToCart = previousCartData();
     setCartProduct(addedToCart);
     calculateTotalPrice(addedToCart);
+    
   }, []);
+
+ 
 
   const handelRemoveFromCart = (id) => {
     removeFromCart(id);
     const updatedCart = previousCartData();
     setCartProduct(updatedCart);
     calculateTotalPrice(updatedCart);
+    handleRemoveFromCart(id);
+    
   };
 
   // wishlist
@@ -62,12 +71,16 @@ const DashBoard = () => {
     setCartProduct([]); 
     setTotalPrice(0); 
     localStorage.removeItem("cartAdded"); 
+    handleRemoveFromCart();
+
   };
 
   const handleCloseModal = () => {
     setOpen(false);
     navigate("/");
   };
+
+  
 
   return (
     <div>
@@ -118,13 +131,13 @@ const DashBoard = () => {
                   <h1 className="font-bold">Total Price: $ {totalPrice}</h1>
                   <button
                     onClick={sortCartByPriceDesc}
-                    className="btn rounded-full"
+                    className="btn border-2 border-[#ae4aff] rounded-full text-[#ae4aff]"
                   >
-                    Sort By Price
+                    Sort By Price <img className="w-6 h-6" src="https://img.icons8.com/?size=100&id=21636&format=png&color=000000" alt="" />
                   </button>
                   
                   <button onClick={handlePurchase}
-                    disabled={totalPrice === 0}  className="btn rounded-full">Purchase</button>                  
+                    disabled={totalPrice === 0}  className="btn rounded-full bg-[#ae4aff] text-white">Purchase</button>                  
                 </div>
               </div>
 

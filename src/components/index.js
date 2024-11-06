@@ -1,5 +1,6 @@
 import toast from "react-hot-toast";
 
+
 const previousCartData = () => {
   const allData = localStorage.getItem("cartAdded");
 

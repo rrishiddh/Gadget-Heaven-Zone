@@ -1,14 +1,12 @@
 import { Link, NavLink } from "react-router-dom";
-import { previousCartData } from ".";
-import { useEffect, useState } from "react";
+import { useContext } from "react";
+import { CartProduct } from "./Root";
+
 
 const Navbar = () => {
-  const [cartCount, setCartCount] = useState(0);
-  
-  useEffect(() => {
-    const cartData = previousCartData();
-    setCartCount(cartData.length);
-  }, []);
+  const { cartLength } = useContext(CartProduct);
+    // console.log(cartLength)
+
 
     const navLink = (
         < >
@@ -70,7 +68,7 @@ const Navbar = () => {
                 src="https://img.icons8.com/?size=100&id=85080&format=png&color=000000"
                 alt="Cart"
                 className="w-5 rounded-full  h-5"
-              /> <span className="absolute  left-10 bottom-0 -top-1 rounded-full text-xl   font-bold">{cartCount} </span>            
+              /> <span className="absolute  left-10 bottom-0 -top-1 rounded-full text-xl   font-bold">{cartLength.length} </span>            
             </NavLink>       
           </div>
           <Link className="rounded-full btn " to='/dashboard'><img className="w-5  h-5 rounded-full" src="https://img.icons8.com/?size=100&id=85038&format=png&color=000000" alt="" /></Link>
