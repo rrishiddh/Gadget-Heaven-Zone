@@ -1,9 +1,9 @@
-# <img width="30px" src="./src/assets/favicon.png"/>Gadget Heaven Zone✨
+# <img width="30px" src="./src/assets/favicon.png"/>GadgetHeaven Zone✨
 
-## Project Name: Gadget Heaven Zone
+## Project Name: GadgetHeaven Zone
 
 ### A brief description: 
-- The Gadget Heaven Zone project is an interactive, single-page e-commerce application designed to showcase a variety of electronic gadgets and simplify the shopping experience for users. Built with React, this project leverages React Router for smooth, multi-page navigation without page reloads, and employs localStorage as the main tool for data management, ensuring that users' shopping carts and preferences are preserved across sessions. The Context API is utilized specifically to update and display the cart item count in the navbar in real time, enhancing the usability and interactivity of the interface.
+- The GadgetHeaven Zone project is an interactive, single-page e-commerce application designed to showcase a variety of electronic gadgets and simplify the shopping experience for users. Built with React, this project leverages React Router for smooth, multi-page navigation without page reloads, and employs localStorage as the main tool for data management, ensuring that users' shopping carts and preferences are preserved across sessions. The Context API is utilized specifically to update and display the cart item count in the navbar in real time, enhancing the usability and interactivity of the interface.
 
 ---
 
@@ -31,8 +31,8 @@
 - Category-Based Product Display: Use nested routes to show products based on categories (e.g., /products/laptops, /products/phones). This feature can let users easily navigate between categories using a dynamic and structured routing setup.
 
 ##  Live Link: 
-### 1. Netlify : [Gadget Heaven Zone](https://gadget-heaven-zone-rrishiddh.netlify.app/)
-### 2. Surge : [Gadget Heaven Zone](https://gadget-heaven-zone-rrishiddh.surge.sh/)
+### 1. Netlify : [GadgetHeaven Zone](https://gadget-heaven-zone-rrishiddh.netlify.app/)
+### 2. Surge : [GadgetHeaven Zone](https://gadget-heaven-zone-rrishiddh.surge.sh/)
 
 ### Assignment instruction Link : [ProgrammingHero_B10A8](https://github.com/ProgrammingHero1/B10-A8-gadget-heaven/blob/main/Batch-10_Assignment-08.pdf)
 
