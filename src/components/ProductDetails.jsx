@@ -9,7 +9,6 @@ import { Helmet } from "react-helmet-async";
 
 const ProductDetails = () => {
   const {cartLength, addToCart} = useContext(CartProduct);
-  // console.log(cartLength)
 
 
   const data = useLoaderData();
@@ -62,7 +61,7 @@ addToCart(product);
       <Helmet>
         <title>{product ? product.product_title : "Product Details"}</title>
       </Helmet>
-      <div className=" mx-auto text-center space-y-6 bg-[#9538E2] rounded-xl pt-6 text-white pb-32 lg:pb-60 mb-96 max-sm:h-screen">
+      <div className=" mx-auto min-h-screen text-center space-y-6 bg-[#9538E2] rounded-xl pt-6 text-white pb-32 lg:pb-60 mb-96 max-sm:h-screen">
         <h1 className="text-3xl  font-bold lg:w-[80%] mx-auto">
           Product Details
         </h1>
@@ -73,7 +72,7 @@ addToCart(product);
       </div>
 
       <div className="absolute top-48 left-[5%]  w-[90%] ">
-        <div className="bg-white  border border-gray rounded-xl py-10">
+        <div className="bg-base-200  border border-gray rounded-xl py-10">
           <div className="flex flex-col lg:grid  lg:grid-cols-4 max-sm:text-center ">
             <div className="p-4 lg:col-span-2">
               <img

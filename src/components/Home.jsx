@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className="max-w-screen-2xl  mx-auto bg-[#F7F7F7] ">
       <Helmet>
-        <title> Gadget Heaven Zone - Home Page</title>
+        <title> Gadget Heaven - Home Page</title>
       </Helmet>
       <Banner></Banner>
 

@@ -82,7 +82,7 @@ const DashBoard = () => {
         <title> Dashboard</title>
       </Helmet>
       <div className="bg-[#9538E2] ">
-        <div className="max-w-screen-2xl w-[90%] mx-auto ">
+        <div className="max-w-screen-2xl min-h-screen w-[90%] mx-auto ">
           <div className="  text-center space-y-6  rounded-xl pt-6 text-white pb-20">
             <h1 className="text-3xl md:text-5xl font-bold w-[80%] mx-auto">
               Dashboard

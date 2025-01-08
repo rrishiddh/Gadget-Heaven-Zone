@@ -28,8 +28,8 @@ const Navbar = () => {
     );
 
   return (
-    <div className={`max-w-screen-2xl w-[90%] rounded-lg rounded-b-none mt-4 mx-auto ${isHomePage ? 'bg-[#9538E2] text-white ' : ''}`}>
-      <div className="navbar w-[90%] mx-auto">
+    <div className={`max-w-screen-2xl w-[90%] rounded-lg  rounded-b-none py-2 mx-auto ${isHomePage ? 'bg-[#9538E2] text-white ' : ''}`}>
+      <div className="navbar  mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -57,7 +57,7 @@ const Navbar = () => {
             }        
             </ul>
           </div>
-          <Link to='/'><a className="btn btn-ghost md:text-xl gap-2"> <img className="w-5 max-sm:hidden h-5" src="https://img.icons8.com/?size=100&id=54502&format=png&color=000000" alt="" /> GadgetHeaven Zone</a></Link>
+          <Link to='/' className="text-sm btn btn-ghost grid grid-row-2 gap-2"><img className="w-8 max-sm:hidden mx-auto h-8" src="https://img.icons8.com/?size=100&id=12923&format=png&color=000000" alt="" /> Gadget Heaven</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 space-x-4">
@@ -68,15 +68,15 @@ const Navbar = () => {
         </div>
         <div className="navbar-end flex gap-5">
           <div className="relative">
-            <NavLink to="/dashboard" className="btn rounded-full ">
+            <NavLink to="/dashboard" className="btn max-md:btn-sm rounded-full ">
               <img
                 src="https://img.icons8.com/?size=100&id=85080&format=png&color=000000"
                 alt="Cart"
                 className="w-5 rounded-full  h-5"
-              /> <div className="absolute left-8 bottom-0 -top-2  rounded-full text-xl btn btn-sm bg-cyan-100 font-bold">{cartLength.length} </div>            
+              /> <div className="absolute left-8 bottom-0 -top-2  rounded-full btn  btn-xs font-bold">{cartLength.length} </div>            
             </NavLink>       
           </div>
-          <Link className="rounded-full btn " to='/dashboard'><img className="w-5  h-5 rounded-full" src="https://img.icons8.com/?size=100&id=85038&format=png&color=000000" alt="" /></Link>
+          <Link className="rounded-full btn max-md:btn-sm" to='/dashboard'><img className="w-5  h-5 rounded-full" src="https://img.icons8.com/?size=100&id=85038&format=png&color=000000" alt="" /></Link>
         </div>
        
       </div>

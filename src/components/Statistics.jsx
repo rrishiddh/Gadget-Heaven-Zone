@@ -33,7 +33,7 @@ const Statistics = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-screen-2xl w-[90%] mx-auto ">
+      <div className="max-w-screen-2xl w-[90%] mx-auto  overflow-auto">
 
         <ComposedChart className="mt-20 mx-auto"
         width={850}

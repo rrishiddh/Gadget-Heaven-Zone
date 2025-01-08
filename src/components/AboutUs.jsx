@@ -15,7 +15,7 @@ const AboutUs = () => {
                 <h1 className="text-3xl font-bold">
                   Hello Dear Customer, Welcome!
                 </h1>
-                <p className="py-6 font-thin w-[60%] mx-auto ">
+                <p className="py-6 font-thin w-[60%] mx-auto text-black ">
                   Our mission is to simplify the complex world of technology. We
                   strive to make informed decisions about your next tech
                   purchase by providing you with clear, unbiased information.
@@ -25,7 +25,7 @@ const AboutUs = () => {
                 <div className="border-[1px] rounded-lg p-2 border-gray-100">
                 <h3 className="text-2xl font-bold">Our Mission</h3>
                 <hr />
-                <p className="py-2 ">
+                <p className="py-2 text-black ">
                   Our mission is to simplify the complex world of technology. We
                   strive to make informed decisions about your next tech
                   purchase by providing you with clear, unbiased information.
@@ -34,7 +34,7 @@ const AboutUs = () => {
                 <div className="border-[1px] rounded-lg p-2 border-gray-100">
                 <h3 className="text-3xl font-bold">What We Offer</h3>
                 <hr />
-                <ul className="py-2 space-y-1 grid grid-cols-2">
+                <ul className="py-2 space-y-1 grid grid-cols-2 text-black">
                   <li className="btn btn-ghost">In-Depth Reviews</li>
                   <li className="btn btn-ghost">Buying Guides</li>
                   <li className="btn btn-ghost">How-To Guides</li>
@@ -49,11 +49,11 @@ const AboutUs = () => {
                   <p className="mb-6 text-lg">
                     Get the latest updates and news right in your inbox!
                   </p>
-                  <div className="flex justify-center">
+                  <div className="flex justify-center max-sm:flex-col max-sm:w-[70%] mx-auto ">
                     <input
                       type="email"
-                      placeholder="Your Email"
-                      className="input input-bordered input-lg rounded-l-lg w-[40%]"
+                      placeholder="your email.."
+                      className="input input-bordered input-lg rounded-l-lg "
                     />
                     <button className="btn btn-lg bg-gradient-to-r from-pink-400 to-yellow-400  font-semibold rounded-lg">
                       Subscribe

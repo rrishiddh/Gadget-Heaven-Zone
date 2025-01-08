@@ -7,7 +7,7 @@ const Banner = () => {
       <div className=" relative">
       <div className="  mx-auto text-center space-y-6  rounded-xl pt-6 text-white pb-44 lg:pb-60 mb-48 md:mb-64 lg:mb-60 ">
         <h1 className="text-3xl md:text-5xl font-bold lg:w-[80%] mx-auto">
-          Upgrade Your Tech Accessorize with GadgetHeaven Zone
+          Upgrade Your Tech Accessorize with Gadget Heaven
         </h1>
         <p className="lg:w-[50%] w-[80%] mx-auto pb-10">
           Explore the latest gadgets that will take your experience to the next
