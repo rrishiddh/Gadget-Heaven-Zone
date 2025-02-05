@@ -6,6 +6,13 @@
 - The Gadget Heaven project is an interactive, single-page e-commerce application designed to showcase a variety of electronic gadgets and simplify the shopping experience for users. Built with React, this project leverages React Router for smooth, multi-page navigation without page reloads, and employs localStorage as the main tool for data management, ensuring that users' shopping carts and preferences are preserved across sessions. The Context API is utilized specifically to update and display the cart item count in the navbar in real time, enhancing the usability and interactivity of the interface.
 
 ---
+### Main Technology used in this project:
+- Frontend Framework: React is utilized to construct an interactive, single-page e-commerce application, ensuring a dynamic user experience.
+- Routing: React Router is implemented to facilitate seamless, multi-page navigation without necessitating full page reloads.
+- State Management: The Context API is employed to manage and propagate state across the application efficiently.
+- Styling: Tailwind CSS is adopted for crafting a responsive and aesthetically pleasing user interface.
+- Build Tool: Vite is utilized as the build tool to enhance development speed and performance.
+- Package Management: NPM is used for managing project dependencies and scripts.
 
 ### React fundamental concepts used in this project:
 
@@ -22,7 +29,7 @@
 - Context API is also utilized, but its role is specifically for displaying the cart item count in the navbar, ensuring real-time updates whenever items are added or removed. This approach maintains efficiency by keeping only essential data in memory while relying on localStorage for more extensive data handling.
 
 
-### 5 Main Key Features:
+### Main Key Features of This Project:
 
 - Multi-Page Navigation with React Router: Use React Router to set up multi-page navigation. Create routes for pages like "Home," "Products," "Cart," and "Profile," enhancing user navigation without reloading the page.
 - Active Links with React NavLink: Use NavLink to highlight the active page in the navigation bar, giving users a clear indication of their current page. This will provide a smooth and visually engaging experience.
